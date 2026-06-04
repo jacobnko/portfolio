@@ -44,9 +44,9 @@ studio 와 시각적으로 동일한 라이트 토큰·폰트·유틸을 깐다.
 ## Phase 2 — 콘텐츠 모델
 카피/링크를 한 곳에서 편집하도록 타입 지정 데이터 레이어 구성.
 
-- [ ] 2.1 `lib/data.ts` — 타입 정의 (Project, Experience, Badge, NavLink 등)
-- [ ] 2.2 PLAN.md 카피 그대로 입력: hero, 3개 projects(A/B/C), capabilities, experience×2, contact, badges×3
-- [ ] 2.3 placeholder 링크/이미지 경로 상수화 (나중에 J 가 교체)
+- [x] 2.1 `lib/data.ts` — 타입 정의 (Project, Experience, Badge, NavLink 등)
+- [x] 2.2 PLAN.md 카피 그대로 입력: hero, 3개 projects(A/B/C), capabilities, experience×2, contact, badges×3
+- [x] 2.3 placeholder 링크/이미지 경로 상수화 (나중에 J 가 교체)
 
 ↩️ (묶음 B 계속 — Phase 3 끝에서 커밋)
 
@@ -55,10 +55,10 @@ studio 와 시각적으로 동일한 라이트 토큰·폰트·유틸을 깐다.
 ## Phase 3 — 레이아웃 셸 (Nav + Footer + page 골격)
 페이지 뼈대를 세우고 앵커 내비/푸터부터 채운다.
 
-- [ ] 3.1 `components/nav.tsx` — sticky, blur backdrop, wordmark, 앵커(Work·Experience·Contact), GitHub/LinkedIn 아이콘, 모바일 대응
-- [ ] 3.2 `components/footer.tsx` — `© {year} Jacob Ko · Christchurch, Aotearoa NZ` + 미니 내비
-- [ ] 3.3 `app/page.tsx` — Nav + (빈 섹션 앵커들) + Footer 조립
-- [ ] 3.4 앵커 스크롤 동작 확인
+- [x] 3.1 `components/nav.tsx` — sticky, blur backdrop, wordmark, 앵커(Work·Experience·Contact), GitHub/LinkedIn 아이콘, 모바일 대응
+- [x] 3.2 `components/footer.tsx` — `© {year} Jacob Ko · Christchurch, Aotearoa NZ` + 미니 내비
+- [x] 3.3 `app/page.tsx` — Nav + (빈 섹션 앵커들) + Footer 조립
+- [x] 3.4 앵커 스크롤 동작 확인
 
 ➡️ **Commit B:** `feat: content model + layout shell (nav/footer)`
 
