@@ -112,11 +112,11 @@ studio 와 시각적으로 동일한 라이트 토큰·폰트·유틸을 깐다.
 ## Phase 8 — 마감 QA & 빌드 검증
 출시 전 점검.
 
-- [ ] 8.1 De-brand `grep` 체크 ("studio"/agency 표현 0)
-- [ ] 8.2 반응형 375 / 768 / 1280px (overflow·깨짐 없음)
-- [ ] 8.3 `npm run build` 클린 (TS 에러 0)
-- [ ] 8.4 metadata/OG/favicon 등 마무리
-- [ ] 8.5 README 간단 작성 (실행/배포 메모)
+- [x] 8.1 De-brand `grep` 체크 ("studio"/agency 표현 0)
+- [x] 8.2 반응형 375 / 768 / 1280px (overflow·깨짐 없음)
+- [x] 8.3 `npm run build` 클린 (TS 에러 0)
+- [x] 8.4 metadata/OG/favicon 등 마무리
+- [x] 8.5 README 간단 작성 (실행/배포 메모)
 
 ➡️ **Commit E:** `chore: responsive QA + production build verification`
 

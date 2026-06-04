@@ -39,6 +39,8 @@
 
   html {
     scroll-behavior: smooth;
+    /* sticky nav(h-16=4rem) 높이만큼 앵커 점프 오프셋 */
+    scroll-padding-top: 4.5rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
