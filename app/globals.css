@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================================================
+   Jacob Ko — Portfolio Global Styles
+   studio(jacobko-studio) 라이트 토큰을 하드코딩. 라이트 전용.
+   ============================================================= */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --primary: 220 90% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+    --accent: 280 70% 55%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 220 90% 50%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --radius: 0.75rem;
+    /* studio 는 올-Geist 구성 — 디스플레이도 sans 로 매핑 */
+    --font-display: var(--font-sans);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display, var(--font-sans));
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* =============================================================
+   Utilities — studio 포팅
+   ============================================================= */
+
+@layer utilities {
+  .container-x {
+    padding-left: clamp(1rem, 4vw, 2.5rem);
+    padding-right: clamp(1rem, 4vw, 2.5rem);
+  }
+
+  .section-y {
+    padding-top: clamp(3rem, 6vw, 8rem);
+    padding-bottom: clamp(3rem, 6vw, 8rem);
+  }
+
+  .max-content {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
