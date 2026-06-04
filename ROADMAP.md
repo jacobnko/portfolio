@@ -67,9 +67,9 @@ studio 와 시각적으로 동일한 라이트 토큰·폰트·유틸을 깐다.
 ## Phase 4 — Hero 섹션
 첫인상(availability 배지 강조) 구현.
 
-- [ ] 4.1 `components/hero.tsx` — eyebrow / H1(clamp) / sub / CTA(View Work·Get in touch)
-- [ ] 4.2 Availability 배지 3종 (PR·Christchurch·Immediate start) — 가장 도드라지게
-- [ ] 4.3 폴드 위 가시성 확인 (모바일/데스크탑)
+- [x] 4.1 `components/hero.tsx` — eyebrow / H1(clamp) / sub / CTA(View Work·Get in touch)
+- [x] 4.2 Availability 배지 3종 (PR·Christchurch·Immediate start) — 가장 도드라지게
+- [x] 4.3 폴드 위 가시성 확인 (모바일/데스크탑)
 
 ↩️ (묶음 C 계속 — Phase 5 끝에서 커밋)
 
@@ -78,10 +78,10 @@ studio 와 시각적으로 동일한 라이트 토큰·폰트·유틸을 깐다.
 ## Phase 5 — Selected Work + Capabilities
 핵심 쇼케이스.
 
-- [ ] 5.1 `components/projects.tsx` — 카드(번호·제목·태그라인·Challenge/Solution/Achievements·스택 pill·링크·이미지)
-- [ ] 5.2 3개 프로젝트(A 멀티테넌트 / B iOS / C Flutter) 렌더
-- [ ] 5.3 Capabilities strip (Frontend·Backend·iOS·Cross-Platform·DevOps·Compliance)
-- [ ] 5.4 카드 이미지 누락 시 graceful degrade
+- [x] 5.1 `components/projects.tsx` — 카드(번호·제목·태그라인·Challenge/Solution/Achievements·스택 pill·링크·이미지)
+- [x] 5.2 3개 프로젝트(A 멀티테넌트 / B iOS / C Flutter) 렌더
+- [x] 5.3 Capabilities strip (Frontend·Backend·iOS·Cross-Platform·DevOps·Compliance)
+- [x] 5.4 카드 이미지 누락 시 graceful degrade
 
 ➡️ **Commit C:** `feat: hero + selected work + capabilities`
 

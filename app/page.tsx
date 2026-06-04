@@ -1,4 +1,7 @@
 import { Nav } from "@/components/nav";
+import { Hero } from "@/components/hero";
+import { Capabilities } from "@/components/capabilities";
+import { Projects } from "@/components/projects";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -6,17 +9,12 @@ export default function Home() {
     <>
       <Nav />
       <main id="top">
-        {/* 묶음 C·D 에서 각 섹션 컴포넌트로 채움 */}
-        <section className="container-x section-y max-content">
-          <p className="font-mono text-sm text-muted-foreground">
-            [hero — 묶음 C]
-          </p>
-        </section>
+        <Hero />
 
-        <section id="work" className="container-x section-y max-content">
-          <p className="font-mono text-sm text-muted-foreground">
-            [selected work + capabilities — 묶음 C]
-          </p>
+        <Capabilities />
+
+        <section id="work" className="section-y">
+          <Projects />
         </section>
 
         <section id="experience" className="container-x section-y max-content">
