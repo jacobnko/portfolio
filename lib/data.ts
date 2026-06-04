@@ -99,7 +99,7 @@ export const PROJECTS: Project[] = [
       { label: "Live Demo", href: "https://momo.jacobko.app" },
       { label: "Code", href: "#" },
     ],
-    image: "/images/web/project-a.png",
+    image: "/images/web/project-a.svg",
     imageAlt: "Multi-tenant web platform demo screenshot",
   },
   {
@@ -129,7 +129,7 @@ export const PROJECTS: Project[] = [
       { label: "App Store", href: "#" },
       { label: "Code", href: "#" },
     ],
-    image: "/images/ios/project-b.png",
+    image: "/images/ios/project-b.svg",
     imageAlt: "iOS app mockup screenshots",
   },
   {
@@ -147,7 +147,7 @@ export const PROJECTS: Project[] = [
     ],
     stack: ["Flutter", "Dart", "Next.js API", "REST/JSON sync"],
     links: [{ label: "Coming Soon", href: "#" }],
-    image: "/images/flutter/project-c.png",
+    image: "/images/flutter/project-c.svg",
     imageAlt: "Flutter cross-platform app mockup",
   },
 ];
@@ -168,17 +168,24 @@ export const CAPABILITIES: string[] = [
 export type Experience = {
   role: string;
   org: string;
+  period?: string;
   blurb: string;
+  link?: ProjectLink;
 };
 
 export const EXPERIENCE_HEADING = "Experience & Education";
 
 export const EXPERIENCE: Experience[] = [
   {
-    role: "Technical Instructor",
+    role: "iOS App Development Instructor",
     org: "Inflearn",
+    period: "Since 2024",
     blurb:
-      "Authored and taught engineering courses to thousands of developers on one of Korea's largest edtech platforms — turning complex topics into clear, production-grade lessons.",
+      "Own the full course lifecycle end-to-end on one of Korea's largest edtech platforms — curriculum planning, on-camera filming, video editing, one-on-one learner mentoring, and ongoing course management. Turn complex native iOS topics into clear, production-grade lessons for developers.",
+    link: {
+      label: "View instructor profile",
+      href: "https://www.inflearn.com/en/users/468073/@jacobko",
+    },
   },
   {
     role: "NZQA Level 6 Diploma in ICT",

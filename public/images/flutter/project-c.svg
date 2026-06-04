@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Flutter app placeholder">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="hsl(0,0%,98%)"/>
+      <stop offset="1" stop-color="hsl(200,80%,97%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgC)"/>
+  <!-- phone -->
+  <rect x="325" y="80" width="150" height="320" rx="28" fill="#ffffff" stroke="hsl(0,0%,88%)" stroke-width="2"/>
+  <rect x="341" y="110" width="118" height="240" rx="10" fill="hsl(200,80%,96%)"/>
+  <rect x="381" y="94" width="38" height="8" rx="4" fill="hsl(0,0%,85%)"/>
+  <!-- cross-platform arrows -->
+  <circle cx="225" cy="240" r="34" fill="#ffffff" stroke="hsl(220,90%,80%)" stroke-width="2"/>
+  <text x="225" y="246" text-anchor="middle" font-family="monospace" font-size="13" fill="hsl(220,90%,50%)">iOS</text>
+  <circle cx="575" cy="240" r="34" fill="#ffffff" stroke="hsl(280,70%,80%)" stroke-width="2"/>
+  <text x="575" y="246" text-anchor="middle" font-family="monospace" font-size="11" fill="hsl(280,70%,55%)">Android</text>
+  <line x1="259" y1="240" x2="320" y2="240" stroke="hsl(0,0%,80%)" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="480" y1="240" x2="541" y2="240" stroke="hsl(0,0%,80%)" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="400" y="450" text-anchor="middle" font-family="monospace" font-size="15" fill="hsl(0,0%,55%)">Flutter · one codebase, both platforms</text>
+</svg>

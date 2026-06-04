@@ -2,6 +2,8 @@ import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
 import { Capabilities } from "@/components/capabilities";
 import { Projects } from "@/components/projects";
+import { Experience } from "@/components/experience";
+import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -17,16 +19,12 @@ export default function Home() {
           <Projects />
         </section>
 
-        <section id="experience" className="container-x section-y max-content">
-          <p className="font-mono text-sm text-muted-foreground">
-            [experience & education — 묶음 D]
-          </p>
+        <section id="experience" className="section-y">
+          <Experience />
         </section>
 
-        <section id="contact" className="container-x section-y max-content">
-          <p className="font-mono text-sm text-muted-foreground">
-            [contact — 묶음 D]
-          </p>
+        <section id="contact" className="section-y">
+          <Contact />
         </section>
       </main>
       <Footer />

@@ -90,9 +90,9 @@ studio 와 시각적으로 동일한 라이트 토큰·폰트·유틸을 깐다.
 ## Phase 6 — Experience & Contact
 신뢰·전환 섹션.
 
-- [ ] 6.1 `components/experience.tsx` — Inflearn 강사 + NZQA L6 Diploma (타임라인/2카드)
-- [ ] 6.2 `components/contact.tsx` — heading, email(`admin@jacobko.app`), GitHub/LinkedIn(placeholder), 배지 3종 재노출
-- [ ] 6.3 `app/page.tsx` 에 두 섹션 연결
+- [x] 6.1 `components/experience.tsx` — Inflearn 강사 + NZQA L6 Diploma (타임라인/2카드)
+- [x] 6.2 `components/contact.tsx` — heading, email(`admin@jacobko.app`), GitHub/LinkedIn(placeholder), 배지 3종 재노출
+- [x] 6.3 `app/page.tsx` 에 두 섹션 연결
 
 ↩️ (묶음 D 계속 — Phase 7 끝에서 커밋)
 
@@ -101,9 +101,9 @@ studio 와 시각적으로 동일한 라이트 토큰·폰트·유틸을 깐다.
 ## Phase 7 — 이미지/에셋 (placeholder)
 레이아웃 완성을 위한 임시 비주얼.
 
-- [ ] 7.1 `public/images/web/` — Project A 데모 스크린샷 (J 제공/기존 활용)
-- [ ] 7.2 `public/images/ios/` · `public/images/flutter/` — 디바이스 프레임 목업(PNG/SVG)
-- [ ] 7.3 `next/image` 명시적 size 연결
+- [x] 7.1 `public/images/web/` — Project A 데모 스크린샷 (J 제공/기존 활용)
+- [x] 7.2 `public/images/ios/` · `public/images/flutter/` — 디바이스 프레임 목업(PNG/SVG)
+- [x] 7.3 `next/image` 명시적 size 연결
 
 ➡️ **Commit D:** `feat: experience, contact + placeholder images`
 

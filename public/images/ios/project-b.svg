@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="iOS apps placeholder">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="hsl(0,0%,98%)"/>
+      <stop offset="1" stop-color="hsl(280,70%,97%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgB)"/>
+  <!-- two phone frames -->
+  <g>
+    <rect x="280" y="70" width="150" height="320" rx="28" fill="#ffffff" stroke="hsl(0,0%,88%)" stroke-width="2"/>
+    <rect x="296" y="100" width="118" height="240" rx="10" fill="hsl(280,70%,96%)"/>
+    <rect x="336" y="84" width="38" height="8" rx="4" fill="hsl(0,0%,85%)"/>
+    <rect x="312" y="120" width="86" height="12" rx="6" fill="hsl(280,70%,55%)"/>
+    <rect x="312" y="148" width="86" height="8" rx="4" fill="hsl(0,0%,85%)"/>
+    <rect x="312" y="166" width="64" height="8" rx="4" fill="hsl(0,0%,88%)"/>
+  </g>
+  <g opacity="0.92">
+    <rect x="380" y="110" width="150" height="320" rx="28" fill="#ffffff" stroke="hsl(0,0%,88%)" stroke-width="2"/>
+    <rect x="396" y="140" width="118" height="240" rx="10" fill="hsl(220,90%,96%)"/>
+    <rect x="436" y="124" width="38" height="8" rx="4" fill="hsl(0,0%,85%)"/>
+    <rect x="412" y="160" width="86" height="12" rx="6" fill="hsl(220,90%,50%)"/>
+    <rect x="412" y="188" width="86" height="8" rx="4" fill="hsl(0,0%,85%)"/>
+  </g>
+  <text x="400" y="470" text-anchor="middle" font-family="monospace" font-size="15" fill="hsl(0,0%,55%)">iOS Apps · under App Store review</text>
+</svg>
