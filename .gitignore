@@ -29,3 +29,9 @@ next-env.d.ts
 
 # vercel
 .vercel
+
+# claude
+CLAUDE.md
+PLAN.md
+ROADMAP.md
+.claude/
