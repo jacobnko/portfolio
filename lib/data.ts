@@ -71,6 +71,7 @@ export type Project = {
   links: ProjectLink[];
   image: string; // public/ 기준 경로 (없으면 graceful degrade)
   imageAlt: string;
+  imageHref?: string; // 이미지 클릭 시 이동할 URL
 };
 
 export const PROJECTS_HEADING = {
@@ -85,23 +86,23 @@ export const PROJECTS: Project[] = [
     tagline:
       "One Next.js 15 codebase powering multiple independent sites — each with its own brand, language, and feature set.",
     challenge:
-      "Delivering multiple distinct production websites without duplicating code or diverging quality — each needing its own brand, content, language, compliance posture, and premium conversion modules.",
+      "Deliver multiple distinct production websites from a single codebase — each needing its own brand, language, feature set, and compliance posture, without duplicating code.",
     solution:
-      "Architected a single Next.js 15 (App Router) codebase with a persona/module toggle system — features (AI chat, booking, e-commerce, i18n) switch on per deployment through config, with build-time tree-shaking so each site ships only what it uses.",
+      "Single Next.js 15 (App Router) codebase with a persona/module toggle — features switch on per deployment through config, with build-time tree-shaking so each site ships only what it uses.",
     achievements: [
       "Module-toggle architecture reusing one codebase across 6+ distinct site profiles.",
-      "Shipped production AI chat assistant (Gemini API), instant quote calculator, and Bento showcase modules.",
-      "NZ Privacy Act 2020 compliance built into code — consent flows, data-handling, contact pipelines.",
-      "Full i18n bilingual architecture (EN/KO) — locale routing + content model.",
-      "Type-safe config/content layer; Supabase-backed CMS + auth; Vercel edge delivery.",
+      "Production AI chat assistant (Gemini API), instant quote calculator, and Bento showcase modules.",
+      "NZ Privacy Act 2020 compliance — consent flows, data-handling, contact pipelines.",
+      "Bilingual architecture (EN/KO) — locale routing + full content model.",
+      "Type-safe config layer; Supabase CMS + auth; Vercel edge delivery.",
     ],
     stack: ["Next.js 15", "TypeScript", "Tailwind", "Supabase", "Gemini API", "i18n", "Vercel"],
     links: [
-      { label: "Live Demo", href: "https://studio.jacobko.app" },
-      { label: "Code", href: "#" },
+      { label: "Live Site", href: "https://studio.jacobko.app" },
     ],
     image: "/images/web/project-a.png",
     imageAlt: "Multi-tenant web platform — studio.jacobko.app",
+    imageHref: "https://studio.jacobko.app",
   },
   {
     index: "02",

@@ -33,7 +33,7 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
         <p className="mt-2 text-muted-foreground">{project.tagline}</p>
 
-        <dl className="mt-6 space-y-4 text-sm">
+        <dl className="mt-6 space-y-4 text-[15px]">
           <div>
             <dt className="font-mono text-xs uppercase tracking-wider text-primary">
               Challenge
@@ -105,7 +105,19 @@ function ProjectCard({ project }: { project: Project }) {
 
       {/* Image column */}
       <div className="lg:order-last">
-        <ProjectImage src={project.image} alt={project.imageAlt} />
+        {project.imageHref ? (
+          <a
+            href={project.imageHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block transition-opacity hover:opacity-90"
+            aria-label={`Visit ${project.title}`}
+          >
+            <ProjectImage src={project.image} alt={project.imageAlt} />
+          </a>
+        ) : (
+          <ProjectImage src={project.image} alt={project.imageAlt} />
+        )}
       </div>
     </article>
   );
