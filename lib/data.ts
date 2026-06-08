@@ -41,9 +41,9 @@ export const NAV_LINKS: NavLink[] = [
 export type Badge = { emoji: string; label: string };
 
 export const BADGES: Badge[] = [
-  { emoji: "🟢", label: "NZ Permanent Resident — No sponsorship required" },
-  { emoji: "📍", label: "Based in Christchurch" },
-  { emoji: "⚡", label: "Available — Immediate start" },
+  { emoji: "🟢", label: "NZ Permanent Resident" },
+  { emoji: "📍", label: "Christchurch, New Zealand" },
+  { emoji: "🌐", label: "Open to remote · NZ-wide" },
 ];
 
 /* ---------- Hero ---------- */
@@ -176,7 +176,7 @@ export const CAPABILITIES: string[] = [
   "iOS",
   "Cross-Platform",
   "DevOps/Deploy",
-  "Compliance",
+  "AI Integration",
 ];
 
 /* ---------- Experience & Education ---------- */
