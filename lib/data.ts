@@ -100,7 +100,7 @@ export const PROJECTS: Project[] = [
     links: [
       { label: "Live Site", href: "https://studio.jacobko.app" },
     ],
-    image: "/images/web/project-a.png",
+    image: "/images/browser-mockup.png",
     imageAlt: "Multi-tenant web platform — studio.jacobko.app",
     imageHref: "https://studio.jacobko.app",
   },
@@ -108,17 +108,17 @@ export const PROJECTS: Project[] = [
     index: "02",
     title: "iOS Production App Suite",
     tagline:
-      "Three standalone apps built and shipped solo — entertainment, travel, and lifestyle — each production-ready and under App Store review.",
+      "Three native iOS apps built and shipped solo — entertainment, travel, and lifestyle.",
     challenge:
-      "Design, architect, and ship multiple distinct iOS apps as a solo engineer: each with its own domain, UX, data layer, and monetisation strategy, while maintaining a fast, repeatable release pipeline.",
+      "Ship three distinct iOS apps as a solo engineer, each with its own domain, data layer, and monetisation strategy.",
     solution:
-      "Built three native SwiftUI apps with shared architectural patterns (MVVM + Combine, Core Data) and a consistent AdMob monetisation layer. Each app targets a different category — entertainment, travel, and lifestyle — with purpose-built features per domain.",
+      "Native SwiftUI across all three, sharing MVVM + Core Data patterns and a consistent AdMob monetisation layer.",
     achievements: [
-      "MBox — TMDB-powered movie discovery with hero cards, 4-category infinite scroll, and a Core Data watchlist. Custom dark theme throughout.",
-      "DiscoverKR — Korea travel guide with MapKit, on-device AI (Apple Foundation Models) generating highlights and tips per attraction, Trip Planner, and KTO open data.",
-      "CoffeeStamp — Lightweight café stamp-card manager. Core Data persistence, NavigationSplitView, zero external dependencies.",
-      "AdMob banner monetisation integrated across all three apps.",
-      "iOS 15–26 deployment target range; App Store Connect + TestFlight pipeline in place.",
+      "MBox — TMDB movie discovery, 4-category infinite scroll, Core Data watchlist, custom dark theme.",
+      "DiscoverKR — MapKit travel guide with on-device AI (Apple Foundation Models) per attraction + Trip Planner.",
+      "CoffeeStamp — Café stamp-card manager. Core Data, NavigationSplitView, zero dependencies.",
+      "AdMob banner monetisation across all three apps.",
+      "App Store Connect + TestFlight pipeline; iOS 15–26 range.",
     ],
     stack: [
       "Swift",
@@ -140,17 +140,17 @@ export const PROJECTS: Project[] = [
     index: "03",
     title: "Koru — Pregnancy & Baby Companion",
     tagline:
-      "A calm, full-stack Flutter app for the journey from pregnancy into early parenting — live on iOS, Android coming soon.",
+      "Flutter app for the journey from pregnancy into early parenting — live on iOS, Android coming soon.",
     challenge:
-      "Build a warm, privacy-first companion app that handles sensitive family data — ultrasounds, journals, health checkups — with a reliable cloud backend, cross-platform delivery, and zero subscription friction.",
+      "Deliver a privacy-first family companion that handles sensitive data — ultrasounds, journals, health checkups — across both platforms without subscriptions.",
     solution:
-      "Architected a Flutter + Firebase stack with Riverpod state management and go_router navigation. Firebase handles auth (Sign in with Apple, Google, guest), Firestore + Storage for private user content, and Crashlytics/Analytics for stability. A single codebase ships to both iOS and Android.",
+      "Flutter + Firebase stack with Riverpod state management. Single codebase ships to iOS and Android; Firebase handles auth, Firestore + Storage for private user content.",
     achievements: [
-      "Week-by-week pregnancy home with baby size milestones and a growth journal with mood tags.",
-      "Private memories gallery backed by Firebase Storage — ultrasounds, bump photos, baby moments.",
-      "Well Child checkup timeline with local reminders; care schedule adapts per country (NZ-first launch).",
-      "Sign in with Apple + Google + guest mode; in-app account deletion (App Store guideline 5.1.1(v)).",
-      "Live on iOS App Store · Android Play Store launch in progress.",
+      "Week-by-week pregnancy tracking with baby size milestones and a growth journal.",
+      "Private memories gallery — ultrasounds, bump photos, baby moments (Firebase Storage).",
+      "Well Child checkup timeline with local reminders; NZ-first care schedule.",
+      "Sign in with Apple + Google + guest mode; in-app account deletion.",
+      "Live on iOS App Store · Android Play Store coming soon.",
     ],
     stack: [
       "Flutter",
@@ -196,19 +196,41 @@ export const EXPERIENCE: Experience[] = [
   {
     role: "iOS App Development Instructor",
     org: "Inflearn",
-    period: "Since 2024",
+    period: "Aug 2022 – Present · Remote, KR",
     blurb:
-      "Own the full course lifecycle end-to-end on one of Korea's largest edtech platforms — curriculum planning, on-camera filming, video editing, one-on-one learner mentoring, and ongoing course management. Turn complex native iOS topics into clear, production-grade lessons for developers.",
+      "Teaching native iOS development on one of Korea's largest edtech platforms — from curriculum design and filming to learner mentoring.",
     link: {
       label: "View instructor profile",
       href: "https://www.inflearn.com/en/users/468073/@jacobko",
     },
   },
   {
-    role: "NZQA Level 6 Diploma in ICT",
-    org: "Graduate",
+    role: "Junior iOS Developer",
+    org: "PetEasy Co., Ltd.",
+    period: "Jun 2020 – Dec 2021 · Seoul, KR",
     blurb:
-      "New Zealand-recognised ICT qualification — the local credential baseline for NZ tech roles.",
+      "Built and maintained SwiftUI / UIKit features for a pet-services platform — shop search, reservation flows, and a CoreLocation-powered dog-walking rewards system. Integrated RESTful APIs and managed TestFlight beta builds through to App Store release.",
+  },
+  {
+    role: "Junior IT Support Specialist",
+    org: "Donggok Precision",
+    period: "Jan 2019 – Apr 2020 · Seoul, KR",
+    blurb:
+      "Handled hardware, software, and network troubleshooting to minimise downtime. Managed system updates, data backups, and workstation setups across the local IT infrastructure.",
+  },
+  {
+    role: "Telecommunication Technician",
+    org: "Garden City Comms",
+    period: "Jan 2017 – Aug 2018 · Christchurch, NZ",
+    blurb:
+      "Installed and maintained structured data cable and LAN systems across client sites. Executed end-to-end network deployments from technical blueprints and resolved connectivity issues to ensure maximum uptime.",
+  },
+  {
+    role: "Diploma in Information and Communications Technology",
+    org: "CPIT, NZ",
+    period: "Mar 2016",
+    blurb:
+      "New Zealand-recognised ICT qualification (NZQA Level 6) — the local credential baseline for NZ tech roles.",
   },
 ];
 
