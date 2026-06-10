@@ -19,10 +19,13 @@ export type SocialLink = {
   icon: "github" | "linkedin" | "mail";
 };
 
-// placeholder — J 가 실제 URL 로 교체
 export const SOCIALS: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/jacobnko", icon: "github" },
-  { label: "LinkedIn", href: "#", icon: "linkedin" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/jacob-taehyun-ko/",
+    icon: "linkedin",
+  },
   { label: "Email", href: `mailto:${SITE.email}`, icon: "mail" },
 ];
 
