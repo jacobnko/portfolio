@@ -78,7 +78,7 @@ function ProjectCard({ project }: { project: Project }) {
         {/* Links */}
         <div className="mt-6 flex flex-wrap gap-3">
           {project.links.map((link) => {
-            const disabled = link.href === "#";
+            const disabled = link.disabled ?? (link.href === "#");
             return (
               <a
                 key={link.label}
@@ -105,7 +105,7 @@ function ProjectCard({ project }: { project: Project }) {
 
       {/* Image column */}
       <div className="lg:order-last">
-        {project.imageHref ? (
+        {project.imageHref && project.imageHref !== "#" ? (
           <a
             href={project.imageHref}
             target="_blank"

@@ -49,16 +49,16 @@ export const BADGES: Badge[] = [
 /* ---------- Hero ---------- */
 
 export const HERO = {
-  eyebrow: "SOFTWARE / PRODUCT ENGINEER",
-  h1: "I design, build, and ship full products — web and mobile — on my own.",
-  sub: "Full-stack engineer based in Christchurch, New Zealand. I take ideas from architecture to App Store, owning the Next.js backend, the iOS/Flutter client, and everything in between.",
+  eyebrow: "MOBILE / SOFTWARE ENGINEER",
+  h1: "I design, build, and ship full products — mobile and web — on my own.",
+  sub: "Full-stack engineer who ships complete products end-to-end. Web platforms on Next.js, production APIs on NestJS, native iOS in Swift, and cross-platform mobile in Flutter — from schema to App Store. I integrate AI tooling into my workflow to build fast and reliably, while owning every architectural decision.",
   ctaPrimary: { label: "View Work", href: "#work" },
-  ctaGhost: { label: "Get in touch", href: "#contact" },
+  ctaGhost: { label: "Get in touch", href: `mailto:${SITE.email}` },
 } as const;
 
 /* ---------- Selected Work ---------- */
 
-export type ProjectLink = { label: string; href: string };
+export type ProjectLink = { label: string; href: string; disabled?: boolean };
 
 export type Project = {
   index: string;
@@ -76,25 +76,60 @@ export type Project = {
 
 export const PROJECTS_HEADING = {
   title: "Selected Work",
-  sub: "Three production systems I architected and shipped end-to-end.",
+  sub: "Production systems I architected and shipped end-to-end.",
 } as const;
 
 export const PROJECTS: Project[] = [
   {
     index: "01",
+    title: "Mobile Apps — iOS & Android",
+    tagline:
+      "Native iOS and cross-platform Android development — UIKit / SwiftUI for Apple, Flutter for dual-market.",
+    challenge:
+      "Design and ship four distinct mobile apps as a solo engineer across entertainment, travel, lifestyle, and parenting.",
+    solution:
+      "iOS apps built with UIKit and SwiftUI following modern Apple platform guidelines. Flutter delivers the Android side from a single codebase — enabling simultaneous dual-market launch.",
+    achievements: [
+      "Koru — Pregnancy & baby companion, Firebase backend. iOS live · Android coming. (Flutter)",
+      "MBox — TMDB movie discovery, infinite scroll, SwiftData watchlist. (iOS Native)",
+      "DiscoverKR — Korea travel guide with MapKit + on-device AI (Apple Foundation Models). (iOS Native)",
+      "CoffeeStamp — Café stamp-card manager, zero dependencies. (iOS Native)",
+    ],
+    stack: [
+      "UIKit",
+      "SwiftUI",
+      "Flutter",
+      "Firebase",
+      "Concurrency",
+      "SwiftData",
+      "MapKit",
+      "Foundation Models",
+    ],
+    links: [
+      { label: "App Store Profile", href: "#", disabled: false },
+      { label: "Koru", href: "https://koru.jacobko.app/" },
+      { label: "MBox", href: "https://studio.jacobko.app/mbox" },
+      { label: "DiscoverKR", href: "https://discoverykr.jacobko.app/" },
+      { label: "CoffeeStamp", href: "https://coffeestamp.jacobko.app/" },
+    ],
+    image: "/images/mobile-apps-thumbnail.png",
+    imageAlt: "Native mobile apps — iOS & Android",
+    imageHref: "#",
+  },
+  {
+    index: "02",
     title: "Modular Multi-Tenant Web Platform",
     tagline:
       "One Next.js 15 codebase powering multiple independent sites — each with its own brand, language, and feature set.",
     challenge:
-      "Deliver multiple distinct production websites from a single codebase — each needing its own brand, language, feature set, and compliance posture, without duplicating code.",
+      "Ship multiple distinct production sites from one codebase — each with its own brand, language, and compliance posture.",
     solution:
-      "Single Next.js 15 (App Router) codebase with a persona/module toggle — features switch on per deployment through config, with build-time tree-shaking so each site ships only what it uses.",
+      "Next.js 15 App Router with a persona/module toggle — features switch on per deployment through config.",
     achievements: [
-      "Module-toggle architecture reusing one codebase across 6+ distinct site profiles.",
-      "Production AI chat assistant (Gemini API), instant quote calculator, and Bento showcase modules.",
-      "NZ Privacy Act 2020 compliance — consent flows, data-handling, contact pipelines.",
-      "Bilingual architecture (EN/KO) — locale routing + full content model.",
-      "Type-safe config layer; Supabase CMS + auth; Vercel edge delivery.",
+      "Module-toggle architecture across 6+ site profiles from one codebase.",
+      "Production AI chat (Gemini API), quote calculator, and Bento showcase modules.",
+      "Bilingual EN/KO — locale routing + full content model.",
+      "NZ Privacy Act 2020 compliance; Supabase CMS + auth; Vercel edge delivery.",
     ],
     stack: ["Next.js 15", "TypeScript", "Tailwind", "Supabase", "Gemini API", "i18n", "Vercel"],
     links: [
@@ -105,77 +140,39 @@ export const PROJECTS: Project[] = [
     imageHref: "https://studio.jacobko.app",
   },
   {
-    index: "02",
-    title: "iOS Production App Suite",
-    tagline:
-      "Three native iOS apps built and shipped solo — entertainment, travel, and lifestyle.",
-    challenge:
-      "Ship three distinct iOS apps as a solo engineer, each with its own domain, data layer, and monetisation strategy.",
-    solution:
-      "Native SwiftUI across all three, sharing MVVM + Core Data patterns and a consistent AdMob monetisation layer.",
-    achievements: [
-      "MBox — TMDB movie discovery, 4-category infinite scroll, Core Data watchlist, custom dark theme.",
-      "DiscoverKR — MapKit travel guide with on-device AI (Apple Foundation Models) per attraction + Trip Planner.",
-      "CoffeeStamp — Café stamp-card manager. Core Data, NavigationSplitView, zero dependencies.",
-      "AdMob banner monetisation across all three apps.",
-      "App Store Connect + TestFlight pipeline; iOS 15–26 range.",
-    ],
-    stack: [
-      "Swift",
-      "SwiftUI",
-      "MVVM+Combine",
-      "Core Data",
-      "MapKit",
-      "Foundation Models",
-      "AdMob",
-    ],
-    links: [
-      { label: "App Store", href: "#" },
-      { label: "Code", href: "#" },
-    ],
-    image: "/images/ios/project-b.svg",
-    imageAlt: "iOS app suite — MBox, DiscoverKR, CoffeeStamp",
-  },
-  {
     index: "03",
-    title: "Koru — Pregnancy & Baby Companion",
+    title: "Multi-Tenant Booking API",
     tagline:
-      "Flutter app for the journey from pregnancy into early parenting — live on iOS, Android coming soon.",
+      "A production reservation backend I designed end-to-end — auth, tenant isolation, and a concurrency-safe booking rule.",
     challenge:
-      "Deliver a privacy-first family companion that handles sensitive data — ultrasounds, journals, health checkups — across both platforms without subscriptions.",
+      "Architect a multi-tenant reservation system that handles the hard parts — auth, tenant isolation, and race-condition-proof booking — deployed to production with a full test suite and no BaaS shortcuts.",
     solution:
-      "Flutter + Firebase stack with Riverpod state management. Single codebase ships to iOS and Android; Firebase handles auth, Firestore + Storage for private user content.",
+      "KiwiSlot: a multi-tenant reservation API on NestJS + PostgreSQL with JWT auth, role-based guards, code-enforced tenant isolation, and a transactional pessimistic lock that prevents double-booking. AI-assisted workflow — I directed the architecture and own every decision.",
     achievements: [
-      "Week-by-week pregnancy tracking with baby size milestones and a growth journal.",
-      "Private memories gallery — ultrasounds, bump photos, baby moments (Firebase Storage).",
-      "Well Child checkup timeline with local reminders; NZ-first care schedule.",
-      "Sign in with Apple + Google + guest mode; in-app account deletion.",
-      "Live on iOS App Store · Android Play Store coming soon.",
+      "Self-designed relational schema (5 entities) with versioned Prisma migrations.",
+      "JWT auth + OWNER/STAFF role guards; multi-tenant data isolation enforced in code.",
+      "Concurrency-safe double-booking prevention via pessimistic lock — proven race-free with parallel tests.",
+      "Unit + e2e tests; GitHub Actions CI runs against real Postgres on every push.",
+      "Multi-stage Docker image on Neon + Render; interactive Swagger docs live.",
     ],
-    stack: [
-      "Flutter",
-      "Dart",
-      "Riverpod",
-      "Firebase",
-      "go_router",
-      "AdMob",
-    ],
+    stack: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "JWT", "Docker", "GitHub Actions", "Swagger"],
     links: [
-      { label: "App Store", href: "https://koru.jacobko.app" },
-      { label: "Code", href: "#" },
+      { label: "Live Demo", href: "https://kiwislot-demo.jacobko.app" },
+      { label: "API Docs", href: "https://kiwislot.jacobko.app/api/docs" },
     ],
-    image: "/images/flutter/project-c.svg",
-    imageAlt: "Koru — pregnancy and baby companion app",
+    image: "/images/backend-mockup.png",
+    imageAlt: "KiwiSlot — Swagger API docs and concurrency demo",
+    imageHref: "https://kiwislot-demo.jacobko.app",
   },
 ];
 
 /* ---------- Capabilities strip ---------- */
 
 export const CAPABILITIES: string[] = [
-  "Frontend",
-  "Backend",
   "iOS",
-  "Cross-Platform",
+  "Flutter",
+  "Full-Stack",
+  "API Design",
   "DevOps/Deploy",
   "AI Integration",
 ];
@@ -191,6 +188,8 @@ export type Experience = {
 };
 
 export const EXPERIENCE_HEADING = "Experience & Education";
+export const EXPERIENCE_SUBHEADING = "Experience";
+export const EDUCATION_SUBHEADING = "Education";
 
 export const EXPERIENCE: Experience[] = [
   {
@@ -225,6 +224,9 @@ export const EXPERIENCE: Experience[] = [
     blurb:
       "Installed and maintained structured data cable and LAN systems across client sites. Executed end-to-end network deployments from technical blueprints and resolved connectivity issues to ensure maximum uptime.",
   },
+];
+
+export const EDUCATION: Experience[] = [
   {
     role: "Diploma in Information and Communications Technology",
     org: "CPIT, NZ",
@@ -238,5 +240,5 @@ export const EXPERIENCE: Experience[] = [
 
 export const CONTACT = {
   heading: "Let's build something.",
-  sub: "Open to engineering roles across Aotearoa New Zealand. Permanent Resident — immediate start.",
+  sub: "Open to engineering roles across Aotearoa New Zealand. NZ Permanent Resident.",
 } as const;
