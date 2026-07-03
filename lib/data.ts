@@ -89,10 +89,11 @@ export const PROJECTS: Project[] = [
     tagline:
       "Native iOS and cross-platform Android development — UIKit / SwiftUI for Apple, Flutter for dual-market.",
     challenge:
-      "Design and ship four distinct mobile apps as a solo engineer across entertainment, travel, lifestyle, and parenting.",
+      "Design and ship five distinct mobile apps as a solo engineer across grocery, entertainment, travel, lifestyle, and parenting.",
     solution:
       "iOS apps built with UIKit and SwiftUI following modern Apple platform guidelines. Flutter delivers the Android side from a single codebase — enabling simultaneous dual-market launch.",
     achievements: [
+      "Bargly — NZ grocery price comparison. Live on iOS & Android. (Flutter)",
       "Koru — Pregnancy & baby companion, Firebase backend. iOS live · Android coming. (Flutter)",
       "MBox — TMDB movie discovery, infinite scroll, SwiftData watchlist. (iOS Native)",
       "DiscoverKR — Korea travel guide with MapKit + on-device AI (Apple Foundation Models). (iOS Native)",
@@ -110,6 +111,8 @@ export const PROJECTS: Project[] = [
     ],
     links: [
       { label: "App Store Profile", href: "#", disabled: false },
+      { label: "Bargly (App Store)", href: "https://apps.apple.com/app/bargly-nz-grocery-prices/id6783675779" },
+      { label: "Bargly (Google Play)", href: "https://play.google.com/store/apps/details?id=nz.bargly.bargly" },
       { label: "Koru", href: "https://koru.jacobko.app/" },
       { label: "MBox", href: "https://studio.jacobko.app/mbox" },
       { label: "DiscoverKR", href: "https://discoverykr.jacobko.app/" },
@@ -230,6 +233,13 @@ export const EXPERIENCE: Experience[] = [
 ];
 
 export const EDUCATION: Experience[] = [
+  {
+    role: "B.A. English Language & Literature",
+    org: "Korea National Open University",
+    period: "2020 · South Korea",
+    blurb:
+      "Bachelor's degree in English language and literature — completed alongside full-time work, evidencing professional English proficiency and self-directed study.",
+  },
   {
     role: "Diploma in Information and Communications Technology",
     org: "CPIT, NZ",
