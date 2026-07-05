@@ -110,7 +110,7 @@ export const PROJECTS: Project[] = [
       "Foundation Models",
     ],
     links: [
-      { label: "App Store Profile", href: "#", disabled: false },
+      { label: "App Store Profile", href: "https://apps.apple.com/developer/id6777062410" },
       { label: "Bargly (App Store)", href: "https://apps.apple.com/app/bargly-nz-grocery-prices/id6783675779" },
       { label: "Bargly (Google Play)", href: "https://play.google.com/store/apps/details?id=nz.bargly.bargly" },
       { label: "Koru", href: "https://koru.jacobko.app/" },
