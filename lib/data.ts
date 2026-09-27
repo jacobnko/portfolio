@@ -252,7 +252,7 @@ export const EDUCATION: Experience[] = [
     org: "Shin Heung College, Korea",
     period: "2009",
     blurb:
-      "STEM degree covering radiation physics, medical imaging equipment, and applied technical instrumentation.",
+      "Trained in radiologic physics, medical imaging equipment (X-ray, CT, MRI), and precision instrument operation — an early grounding in technical, equipment-driven problem-solving.",
   },
 ];
 
