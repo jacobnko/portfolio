@@ -110,13 +110,13 @@ export const PROJECTS: Project[] = [
       "Foundation Models",
     ],
     links: [
-      { label: "App Store Profile", href: "https://apps.apple.com/developer/id6777062410" },
-      { label: "Bargly (App Store)", href: "https://apps.apple.com/app/bargly-nz-grocery-prices/id6783675779" },
+      { label: "App Store Profile", href: "https://apps.apple.com/nz/developer/taehyun-ko/id6777062410" },
+      { label: "Bargly (App Store)", href: "https://apps.apple.com/nz/app/bargly-nz-grocery-prices/id6783675779" },
       { label: "Bargly (Google Play)", href: "https://play.google.com/store/apps/details?id=nz.bargly.bargly" },
-      { label: "Koru", href: "https://koru.jacobko.app/" },
-      { label: "MBox", href: "https://studio.jacobko.app/mbox" },
-      { label: "DiscoverKR", href: "https://discoverykr.jacobko.app/" },
-      { label: "CoffeeStamp", href: "https://coffeestamp.jacobko.app/" },
+      { label: "Koru", href: "https://apps.apple.com/nz/app/koru-pregnancy-baby/id6777648520" },
+      { label: "MBox", href: "https://apps.apple.com/nz/app/mbox-movie-discovery/id6777062408" },
+      { label: "DiscoverKR", href: "https://apps.apple.com/nz/app/discoverkr-korea-travel/id6777682796" },
+      { label: "CoffeeStamp", href: "https://apps.apple.com/nz/app/coffee-stamp-loyalty-card/id6777343148" },
     ],
     image: "/images/mobile-apps-thumbnail.png",
     imageAlt: "Native mobile apps — iOS & Android",
@@ -246,6 +246,13 @@ export const EDUCATION: Experience[] = [
     period: "Mar 2016",
     blurb:
       "New Zealand-recognised ICT qualification (NZQA Level 6) — the local credential baseline for NZ tech roles.",
+  },
+  {
+    role: "Bachelor in Radiation Technology",
+    org: "Shin Heung College, Korea",
+    period: "2009",
+    blurb:
+      "STEM degree covering radiation physics, medical imaging equipment, and applied technical instrumentation.",
   },
 ];
 
