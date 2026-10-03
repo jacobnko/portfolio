@@ -1,8 +1,9 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, GraduationCap } from "lucide-react";
 import {
   EXPERIENCE,
   EDUCATION,
   EXPERIENCE_HEADING,
+  EXPERIENCE_LINKS,
   EXPERIENCE_SUBHEADING,
   EDUCATION_SUBHEADING,
 } from "@/lib/data";
@@ -12,6 +13,22 @@ export function Experience() {
   return (
     <div className="container-x max-content">
       <h2 className="text-3xl sm:text-4xl">{EXPERIENCE_HEADING}</h2>
+
+      <ul className="mt-6 flex flex-wrap gap-3">
+        {EXPERIENCE_LINKS.map((link) => (
+          <li key={link.label}>
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-3 text-sm font-medium transition-colors hover:bg-secondary"
+            >
+              <GraduationCap className="h-4 w-4" strokeWidth={1.75} />
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
 
       {/* Experience */}
       <h3 className="mt-10 font-mono text-xs uppercase tracking-widest text-primary">

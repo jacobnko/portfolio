@@ -197,6 +197,13 @@ export type Experience = {
 };
 
 export const EXPERIENCE_HEADING = "Experience & Education";
+
+export const EXPERIENCE_LINKS: ProjectLink[] = [
+  {
+    label: "Inflearn Instructor",
+    href: "https://www.inflearn.com/en/users/468073/@jacobko",
+  },
+];
 export const EXPERIENCE_SUBHEADING = "Experience";
 export const EDUCATION_SUBHEADING = "Education";
 
