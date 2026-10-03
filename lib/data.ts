@@ -89,10 +89,11 @@ export const PROJECTS: Project[] = [
     tagline:
       "Native iOS and cross-platform Android development — UIKit / SwiftUI for Apple, Flutter for dual-market.",
     challenge:
-      "Design and ship five distinct mobile apps as a solo engineer across grocery, entertainment, travel, lifestyle, and parenting.",
+      "Design and ship six distinct mobile apps as a solo engineer across grocery, entertainment, travel, lifestyle, parenting, and games.",
     solution:
       "iOS apps built with UIKit and SwiftUI following modern Apple platform guidelines. Flutter delivers the Android side from a single codebase — enabling simultaneous dual-market launch.",
     achievements: [
+      "Chordline — Line-connecting puzzle game with 984+ levels, each verified to have exactly one solution. Swift 6, StoreKit. (iOS Native)",
       "Bargly — NZ grocery price comparison. Live on iOS & Android. (Flutter)",
       "Koru — Pregnancy & baby companion, Firebase backend. iOS live · Android coming. (Flutter)",
       "MBox — TMDB movie discovery, infinite scroll, SwiftData watchlist. (iOS Native)",
@@ -108,11 +109,13 @@ export const PROJECTS: Project[] = [
       "SwiftData",
       "MapKit",
       "Foundation Models",
+      "StoreKit",
     ],
     links: [
       { label: "App Store Profile", href: "https://apps.apple.com/nz/developer/taehyun-ko/id6777062410" },
       { label: "Bargly (App Store)", href: "https://apps.apple.com/nz/app/bargly-nz-grocery-prices/id6783675779" },
       { label: "Bargly (Google Play)", href: "https://play.google.com/store/apps/details?id=nz.bargly.bargly" },
+      { label: "Chordline", href: "https://apps.apple.com/nz/app/chordline/id6814033554" },
       { label: "Koru", href: "https://apps.apple.com/nz/app/koru-pregnancy-baby/id6777648520" },
       { label: "MBox", href: "https://apps.apple.com/nz/app/mbox-movie-discovery/id6777062408" },
       { label: "DiscoverKR", href: "https://apps.apple.com/nz/app/discoverkr-korea-travel/id6777682796" },
